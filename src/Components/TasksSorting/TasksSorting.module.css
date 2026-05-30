@@ -1,0 +1,82 @@
+.sorting{
+    padding: 10px;
+    border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 50px;
+}
+
+.mainStats{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border: var(--primary-border);
+    padding: 0 0;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.mainStats .taskStat{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 3px;
+}
+.mainStats .taskStat span{
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: black;
+}
+.mainStats .taskStat.active{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.mainStats .taskStat:hover{
+    background-color: rgb(14, 71, 112);
+}
+
+
+.select {
+  width: 180px;
+
+  padding: 10px 14px;
+
+  border: 1px solid rgba(137, 207, 240, 0.3);
+  border-radius: 10px;
+
+  background-color: #111827;
+  color: #e5f6ff;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  outline: none;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.select:hover {
+  border-color: #89cff0;
+}
+
+.select:focus {
+  border-color: #89cff0;
+
+  box-shadow: 0 0 0 3px rgba(137, 207, 240, 0.15);
+}
+
+.select option {
+  background-color: #111827;
+  color: #e5f6ff;
+}

@@ -1,0 +1,14 @@
+.tasksPage{
+    padding: 20px 10px;
+}
+.tasksPage .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tasksPage .title .info{
+    margin-top: 13px;
+    font-size: 13px;
+    color: #8a8a8a;
+    font-weight: bold;
+}

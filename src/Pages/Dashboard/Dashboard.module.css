@@ -1,0 +1,21 @@
+.container{
+    padding: 10px;
+}
+.container .title{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.container .title h3{
+    font-size: 20px;
+}
+.container .title .par{
+    font-size: 11px;
+    color: #757575;
+    margin-top: 6px;
+}
+
+:global(.icon){
+    font-size: 40px;
+    color: rgb(32, 218, 255);
+    margin-top: 10px;
+}

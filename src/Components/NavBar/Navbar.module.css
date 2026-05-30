@@ -1,0 +1,84 @@
+.mainNav{
+    position: fixed;
+    top: 0;
+    left: 220px;
+    width: calc(100% - 220px);
+    height: 77px;
+    border-bottom: var(--primary-border);
+    padding: 10px;
+    overflow: hidden;
+    z-index: 10000;
+    background-color: black;
+    box-shadow: 2px -1px 12px 1px #3bb3ff;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.content .ser{
+    width: 350px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.content .ser input{
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    height: 30px;
+    padding: 10px;
+    transition: .3s;
+}
+.content .ser input:focus{
+    width: 100%;
+}
+.sec{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.sec .info{
+    padding: 10px;
+}
+.noti{
+    fill: #c4c4c4;
+    cursor: pointer;
+    transition: .3s;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.noti:hover{
+    fill: rgb(13, 109, 212);
+    transform: scale(1.1);
+}
+.dark{
+    cursor: pointer;
+    transition: .3s;
+}
+.dark:hover{
+    fill: #0070f3;
+}
+.acc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+    border-left: var(--primary-border);
+    padding: 6px;
+    padding-left: 10px;
+}
+.acc .name{
+    font-size: 16px;
+}
+.acc .email{
+    font-size: 10px;
+    color: rgb(105, 105, 105);
+}
+.acc .image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

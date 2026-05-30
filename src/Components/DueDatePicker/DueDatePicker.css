@@ -1,0 +1,43 @@
+.due-date-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 280px;
+}
+
+.due-date-label {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.date-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px; /* المساحة بين icon والكلام */
+  padding: 10px 12px;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  background: #0f172a;
+}
+
+.calendar-icon {
+  color: #fff;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.due-date-input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  padding: 0;
+}
+
+.due-date-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}

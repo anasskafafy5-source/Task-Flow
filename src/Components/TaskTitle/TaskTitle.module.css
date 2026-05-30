@@ -1,0 +1,52 @@
+.task{
+    width: 100%;
+    margin-bottom: 15px;
+    border: var(--primary-border);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+.task .left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.task .left .stat{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgb(214, 110, 7);
+}
+.task .left .stat.done{
+    background-color: rgb(8, 59, 8);
+
+}
+.task .left .title{
+    font-size: 16px;
+    color: #eee;
+}
+.task .left .title.done{
+    text-decoration: line-through;
+    color: rgb(91, 91, 91);
+}
+.task .right{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.task .right .due{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #949494ee;
+}
+
+.task .right .iconDone{
+    color: green;
+    size: 20px;
+}

@@ -1,0 +1,16 @@
+.page{
+    padding: 15px;
+}
+.page .title{
+    padding: 5px;
+}
+.page .title h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: #eee;
+    margin-bottom: 4px;
+}
+.page .title p{
+    font-size: 14px;
+    color: rgb(137, 137, 137);
+}

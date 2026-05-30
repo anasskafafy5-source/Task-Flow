@@ -1,0 +1,29 @@
+.recentTasks{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    border: var(--primary-border);
+    box-shadow: var(--primary-box-shadow);
+}
+.recentTasks .title{
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recentTasks .title h4{
+    font-size: 19px;
+    color: #eee;
+}
+.recentTasks .title .link{
+    color: rgb(69, 193, 255);
+    font-size: 13px;
+    font-weight: 200;
+    text-decoration: none;
+}
+.empty{
+    padding: 30px;
+    color: #eee;
+}

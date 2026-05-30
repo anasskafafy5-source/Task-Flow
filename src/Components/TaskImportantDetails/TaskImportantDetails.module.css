@@ -1,0 +1,65 @@
+.main{
+    padding: 13px 10px;
+    border: var(--primary-border);
+    border-radius: 10px;
+    flex-basis: 60%;
+}
+.upper{
+    padding: 14px;
+    color: #eee;
+}
+.upper h4{
+    margin-bottom: 18px;
+    font-size: 23px;
+}
+.upper .desc{
+    color: #a9a9a9;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+.complete{
+    text-decoration: line-through;
+}
+
+/* Start Task Stat compnent */
+.mainStat{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px 10px;
+    background-color: rgba(70, 70, 70, 0.281);
+    padding: 14px 10px;
+    border-radius: 10px;
+}
+/* end Task Stat compnent */
+
+/* start min details of task */
+.minDetails{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.minDetails .icon{
+    font-size: 24px;
+}
+.minDetails .title{
+    color: #9c9c9c;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.minDetails .txt{
+    font-size: 15px;
+}
+.minDetails .txt.Completed{
+    color: green;
+}
+.minDetails .txt.Pending{
+    color: orange;
+}
+.minDetails .txt.OverDue{
+    color: red;
+}
+/* end min details of task */

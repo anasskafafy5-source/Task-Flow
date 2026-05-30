@@ -1,0 +1,209 @@
+src/
+│
+├── components/
+│   ├── Sidebar/
+│   │   ├── Sidebar.jsx
+│   │   └── Sidebar.module.css
+│   │
+│   ├── Navbar/
+│   │   ├── Navbar.jsx
+│   │   └── Navbar.module.css
+│   │
+│   ├── TaskCard/
+│   │   ├── TaskCard.jsx
+│   │   └── TaskCard.module.css
+│   │
+│   ├── TaskForm/
+│   │   ├── TaskForm.jsx
+│   │   └── TaskForm.module.css
+│   │
+│   ├── TaskList/
+│   │   ├── TaskList.jsx
+│   │   └── TaskList.module.css
+│   │
+│   ├── StatsCard/
+│   │   ├── StatsCard.jsx
+│   │   └── StatsCard.module.css
+│   │
+│   ├── WeeklyProgress/
+│   │   ├── WeeklyProgress.jsx
+│   │   └── WeeklyProgress.module.css
+│   │
+│   └── Modal/
+│       ├── Modal.jsx
+│       └── Modal.module.css
+│
+├── pages/
+│   ├── Dashboard/
+│   │   ├── Dashboard.jsx
+│   │   └── Dashboard.module.css
+│   │
+│   ├── Tasks/
+│   │   ├── Tasks.jsx
+│   │   └── Tasks.module.css
+│   │
+│   ├── TaskDetails/
+│   │   ├── TaskDetails.jsx
+│   │   └── TaskDetails.module.css
+│   │
+│   ├── Stats/
+│   │   ├── Stats.jsx
+│   │   └── Stats.module.css
+│   │
+│   └── Settings/
+│       ├── Settings.jsx
+│       └── Settings.module.css
+│
+├── context/
+│   ├── TaskContext.jsx
+│   └── taskReducer.js
+│
+├── routes/
+│   └── AppRoutes.jsx
+│
+├── utils/
+│   └── helpers.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+
+
+
+
+[2] the look of the data: 
+ const task = {
+  id: "1",
+  title: "Learn useReducer",
+  description: "Build the reducer logic for the app",
+  done: false,
+  priority: "high",
+  category: "study",
+  createdAt: "2026-05-20T10:00:00.000Z",
+  dueDate: "2026-05-22",
+  completedAt: null
+}
+
+
+
+[3] Fake Data : 
+
+const tasks = [
+  {
+    id: "1",
+    title: "Learn useReducer",
+    description: "Build the reducer logic for the app",
+    notes: "Focus on action types and reducer structure",
+    done: false,
+    priority: "high",
+    category: "study",
+    createdAt: "2026-05-20T10:00:00.000Z",
+    dueDate: "2026-05-22",
+    completedAt: null,
+  },
+
+  {
+    id: "2",
+    title: "Practice Context API",
+    description: "Share tasks state across components",
+    notes: "Try combining Context API with useReducer",
+    done: true,
+    priority: "high",
+    category: "study",
+    createdAt: "2026-05-18T09:30:00.000Z",
+    dueDate: "2026-05-19",
+    completedAt: "2026-05-19T16:00:00.000Z",
+  },
+
+  {
+    id: "3",
+    title: "Design Dashboard UI",
+    description: "Create stats cards and layout sections",
+    notes: "Use dark mode with soft blue accents",
+    done: false,
+    priority: "medium",
+    category: "work",
+    createdAt: "2026-05-17T14:00:00.000Z",
+    dueDate: "2026-05-24",
+    completedAt: null,
+  },
+
+  {
+    id: "4",
+    title: "Workout Session",
+    description: "Street workout push training",
+    notes: "Focus on dips and explosive push-ups",
+    done: true,
+    priority: "medium",
+    category: "personal",
+    createdAt: "2026-05-16T07:00:00.000Z",
+    dueDate: "2026-05-16",
+    completedAt: "2026-05-16T08:15:00.000Z",
+  },
+
+  {
+    id: "5",
+    title: "Fix Navbar Responsive Issues",
+    description: "Improve sidebar behavior on mobile",
+    notes: "Check overflow and sidebar transitions",
+    done: false,
+    priority: "high",
+    category: "work",
+    createdAt: "2026-05-20T12:00:00.000Z",
+    dueDate: "2026-05-23",
+    completedAt: null,
+  },
+
+  {
+    id: "6",
+    title: "Read About Memoization",
+    description: "Understand React.memo and useMemo deeply",
+    notes: "Learn when memoization actually improves performance",
+    done: true,
+    priority: "low",
+    category: "study",
+    createdAt: "2026-05-15T11:00:00.000Z",
+    dueDate: "2026-05-17",
+    completedAt: "2026-05-17T13:20:00.000Z",
+  },
+
+  {
+    id: "7",
+    title: "Create Weekly Progress Chart",
+    description: "Build simple bars using divs and CSS",
+    notes: "Later replace static chart with dynamic data",
+    done: false,
+    priority: "medium",
+    category: "study",
+    createdAt: "2026-05-20T15:30:00.000Z",
+    dueDate: "2026-05-25",
+    completedAt: null,
+  },
+
+  {
+    id: "8",
+    title: "Clean Project Structure",
+    description: "Organize components and pages folders",
+    notes: "Separate reusable UI components clearly",
+    done: true,
+    priority: "medium",
+    category: "work",
+    createdAt: "2026-05-14T10:45:00.000Z",
+    dueDate: "2026-05-15",
+    completedAt: "2026-05-15T18:10:00.000Z",
+  },
+];
+
+[3.5] funtcion to get the day which the task completed at 
+
+function getDayName(dateString) {
+  return new Date(dateString).toLocaleDateString("en-US", {
+    weekday: "long",
+  });
+}
+
+[4] derived state:
+
+const productivity = Math.round(
+  (completedTasks / totalTasks) * 100
+);

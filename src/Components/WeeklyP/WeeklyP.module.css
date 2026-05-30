@@ -1,0 +1,73 @@
+.weekDigram{
+    width: 700px;
+    border: var(--primary-border);
+    height: 400px;
+    box-shadow: var(--primary-box-shadow);
+    border-radius: 20px;
+    padding: 20px;
+}
+.weekDigram h4{
+    padding: 10px;
+    color: #eee;
+}
+.weekDigram .digram{
+    margin-left: 15px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.weekDigram .digram .days{
+    width: 90%;
+    height: 1px;
+    background-color: #7a7a7a;
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+}
+.weekDigram .digram .days .spansDays{
+    font-size: 12px;
+    font-weight: 300;
+    color: #939393;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;
+}
+
+.weekDigram .digram .pro{
+    width: 1px;
+    height: 250px;
+   background-color: #7a7a7a;
+   position: absolute;
+   bottom: 60px;
+   left: 45px;
+}
+.weekDigram .digram .pro .complete{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: -13px;
+}
+.weekDigram .digram .pro .complete span{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+    color: #939393;
+    display: block;
+}
+
+.weekDigram .digram .progressDays{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    height: 300px;
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
+}
+.weekDigram .digram .progressDays .oneDay{
+    width: 5px;
+    background-color: #14b2da;
+    cursor: pointer;
+}

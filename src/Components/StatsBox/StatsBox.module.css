@@ -1,0 +1,44 @@
+.box{
+    min-width: 220px;
+    height: 150px;
+    border: var(--primary-border);
+    border-radius: 10px;
+    box-shadow: var(--primary-box-shadow);
+    padding: 15px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box span.color{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    opacity: .2;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+.box span.per{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 6px;
+    font-weight: 200;
+    color: rgb(61, 216, 61);
+}
+.left{
+    padding-left: 10px;
+}
+.text{
+    font-size: 13px !important;
+    margin-top: 5px;
+    color: #727272;
+}
+.number{
+    color: white !important;
+    font-size: 30px !important;
+    font-weight: 500 !important;
+    margin-top: 5px;
+
+}

@@ -1,0 +1,40 @@
+.main{
+    flex: 1;
+    margin-left: 50px;
+    padding: 20px 16px;
+    border: var(--primary-border);
+    border-radius: 10px;
+}
+.main h4{
+    margin: 15px 0;
+}
+.mainz .title{
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #b3b3b3;
+}
+.mainz div{
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+.quickAction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    background-color: rgb(12, 89, 171);
+    color: #eee;
+    border: none;
+    outline: none;
+    padding: 13px 25px;
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: bold;
+    font-size: 16px;
+}
+.quickAction:hover{
+    background-color: rgb(45, 46, 47);
+}

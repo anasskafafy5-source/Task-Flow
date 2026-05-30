@@ -1,0 +1,35 @@
+.title{
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title .control .button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #Eee;
+}
+.title .control .button span{
+    display: block;
+}
+.title .control .edit{
+    background-color: #373737;
+    
+}
+.title .control .edit:hover{
+    background-color: #121212;
+}
+.title .control .delete{
+    background-color: rgba(147, 0, 0, 0.539);
+    color: red;
+}
+.title .control .delete:hover{
+    background-color: #230101;
+}
+

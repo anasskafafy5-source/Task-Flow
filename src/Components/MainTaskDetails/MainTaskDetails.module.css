@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.notes{
+    margin-top: 30px;
+    padding: 20px 15px;
+    border: var(--primary-border);
+    border-radius: 7px;
+    width: 350px;
+    margin-left: 15px;
+}
+.notesArea{
+    padding: 10px 10px;
+    margin: 15px;
+    background-color: rgb(39, 39, 39);
+    padding: 7px;
+    font-size: 16px;
+    color: #eee;
+    font-weight: bold;
+
+}

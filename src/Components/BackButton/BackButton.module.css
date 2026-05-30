@@ -1,0 +1,19 @@
+.back{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.icon{
+    color: white;
+    font-size: 25px;
+    transition: .3s;
+    font-weight: bold;
+}
+.back:hover .icon{
+    color: rgb(24, 139, 197);
+    transform: scale(1.1);
+}
