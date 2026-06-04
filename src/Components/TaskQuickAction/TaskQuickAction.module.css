@@ -38,3 +38,35 @@
 .quickAction:hover{
     background-color: rgb(45, 46, 47);
 }
+
+
+
+@media (max-width: 768px) {
+    .main {
+        margin-left: 0; /* مهم جداً: لغينا المارجن الشمال عشان العنصر مايتشفتش بره الشاشة */
+        margin-top: 20px; /* حطينا مارجن فوق كبديل عشان يفصل عن العنصر اللي قبله */
+        padding: 15px 12px; /* تقليل المسافات الداخلية حاجة بسيطة */
+    }
+
+    .main h4 {
+        font-size: 18px; /* تصغير حجم العنوان الرئيسي */
+        margin: 10px 0;
+    }
+
+    /* تصغير نصوص قسم mainz */
+    .mainz .title {
+        font-size: 14px; /* تصغير من 16px */
+        margin-bottom: 8px;
+    }
+    .mainz div {
+        font-size: 12px; /* تصغير من 13px */
+    }
+
+    /* تظبيط الزرار السريع (Quick Action) */
+    .quickAction {
+        padding: 11px 20px; /* تصغير حجم البوكس عشان مايبقاش ضخم على الموبايل */
+        font-size: 14px; /* تصغير الخط من 16px */
+        border-radius: 10px; /* تنعيم الحواف بشكل يتناسب مع الحجم الجديد */
+        margin: 10px 0;
+    }
+}

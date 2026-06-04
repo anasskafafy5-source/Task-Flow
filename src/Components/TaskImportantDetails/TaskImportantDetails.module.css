@@ -63,3 +63,50 @@
     color: red;
 }
 /* end min details of task */
+
+
+
+
+@media (max-width: 768px) {
+    .main {
+        flex-basis: 100%; /* بدل 60% عشان ياخد عرض الشاشة كله في الموبايل */
+        padding: 12px 10px;
+    }
+
+    /* تصغير خطوط الجزء العلوي */
+    .upper {
+        padding: 10px; /* تقليل البادينج شوية */
+    }
+    .upper h4 {
+        font-size: 19px; /* تصغير العنوان من 23px */
+        margin-bottom: 12px;
+    }
+    .upper .desc {
+        font-size: 14px; /* تصغير الوصف من 16px */
+        padding-left: 2px;
+    }
+
+    /* تظبيط قسم الإحصائيات */
+    .mainStat {
+        flex-direction: column; /* العناصر تنزل تحت بعضها عشان المساحة */
+        align-items: flex-start; /* محاذاة العناصر على الشمال بدل السنتر */
+        gap: 15px; /* مسافة مريحة بين الإحصائيات بعد ما بقوا تحت بعض */
+        padding: 12px;
+        margin: 25px 0; /* تصليح وتعديل المارجن */
+    }
+
+    /* تصغير تفاصيل المهام والخطوط */
+    .minDetails {
+        gap: 8px; /* تقليل الجاب حاجة بسيطة */
+    }
+    .minDetails .icon {
+        font-size: 20px; /* تصغير الأيقونة من 24px */
+    }
+    .minDetails .title {
+        font-size: 13px; /* تصغير من 15px */
+        margin-bottom: 4px; /* تقليل المسافة تحت العنوان الصغير */
+    }
+    .minDetails .txt {
+        font-size: 13px; /* تصغير النصوص (Completed, Pending, إلخ) من 15px */
+    }
+}

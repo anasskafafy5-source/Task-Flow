@@ -80,3 +80,42 @@
   background-color: #111827;
   color: #e5f6ff;
 }
+
+
+
+@media (max-width: 768px) {
+
+  .sorting {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    margin-top: 30px;
+
+    /* مهم جدًا */
+    position: relative;
+    overflow: visible;
+  }
+
+  .mainStats {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .mainStats .taskStat {
+    flex: 1;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* مهم: ده اللي بيحل مشاكل الانفلات في بعض الحالات */
+  body {
+    overflow-x: hidden;
+  }
+}

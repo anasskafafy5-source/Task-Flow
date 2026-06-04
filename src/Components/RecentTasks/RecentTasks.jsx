@@ -7,6 +7,7 @@ import { useMainContext } from '../../Context/MainContext';
 function RecentTasks() {
   const {tasks} = useMainContext();
   const recentTasks = tasks.length > 6 ? tasks.slice(-5) : tasks.slice();
+  
     return (
         <div className={styles.recentTasks}>
             <div className={styles.title}>

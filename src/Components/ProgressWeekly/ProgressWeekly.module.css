@@ -3,7 +3,9 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     margin-top: 70px;
     padding-left: 10px;
     padding-right: 10px;
+    gap: 30px;
 }

@@ -50,3 +50,36 @@
     color: green;
     size: 20px;
 }
+
+
+
+@media (max-width: 768px) {
+  .task {
+    padding: 15px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .task .left {
+    gap: 10px;
+  }
+
+  .task .left .title {
+    font-size: 14px;
+  }
+
+  .task .right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .task .right .due {
+    font-size: 12px;
+  }
+
+  .task .left .stat {
+    width: 10px;
+    height: 10px;
+  }
+}

@@ -1,13 +1,27 @@
 .aside{
     position: fixed;
-    bottom: 0;
     left: 0;
     width: 220px;
-    height: 100vh;
+    height: calc(100dvh - 77px);
     background-color: rgb(18, 18, 18);
     border-right: var(--primary-border);
     padding: 10px;
     overflow: hidden;
+    top: 77px;
+    overflow: hidden;
+   transition: transform 0.2s ease;
+   z-index: 50;
+}
+.aside.open{
+    transform: translateX(0);
+}
+.aside.close{
+    transform: translateX(-100%);
+}
+@media (min-width: 768px) {
+  .aside {
+    transform: translateX(0) !important;
+  }
 }
 .mainLogo{
     display: flex;

@@ -39,3 +39,28 @@
 .stat .dueDate.overDue{
     color: red;
 }
+
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .desc {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+
+  .stat {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .stat .dueDate {
+    font-size: 12px;
+  }
+}

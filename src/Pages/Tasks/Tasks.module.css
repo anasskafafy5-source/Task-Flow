@@ -1,14 +1,23 @@
-.tasksPage{
-    padding: 20px 10px;
+.tasksPage {
+  padding: 20px 10px;
 }
-.tasksPage .title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.tasksPage .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.tasksPage .title .info{
-    margin-top: 13px;
-    font-size: 13px;
-    color: #8a8a8a;
-    font-weight: bold;
+.tasksPage .title .info {
+  margin-top: 13px;
+  font-size: 13px;
+  color: #8a8a8a;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .tasksPage .title {
+    flex-direction: column;
+    gap: 40px;
+
+    align-items: flex-start;
+  }
 }

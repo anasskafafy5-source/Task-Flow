@@ -33,3 +33,28 @@
     background-color: #230101;
 }
 
+
+@media (max-width: 768px) {
+    .title {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 15px; /* مسافة بين العنوان وزراير التحكم */
+        padding: 15px;
+    }
+
+    .title .control {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 10px; /* مسافة بين الزراير بدل المارجن */
+    }
+
+    .title .control .button {
+        margin-right: 0; /* لغينا المارجن عشان استخدمنا gap في الكونترول */
+        padding: 8px 15px; /* تصغير البادينج عشان يناسب الموبايل */
+        font-size: 14px; /* تصغير الخط درجة بسيطة */
+        flex: 1; /* بيخلي الزراير تاخد مساحة متساوية وتملا الشاشة */
+        justify-content: center;
+    }
+}

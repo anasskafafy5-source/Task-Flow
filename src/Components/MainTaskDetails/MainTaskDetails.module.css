@@ -1,26 +1,57 @@
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    padding: 15px 20px;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 15px 20px;
 }
 
-.notes{
-    margin-top: 30px;
-    padding: 20px 15px;
-    border: var(--primary-border);
-    border-radius: 7px;
-    width: 350px;
-    margin-left: 15px;
+.notes {
+  margin-top: 30px;
+  padding: 20px 15px;
+  border: var(--primary-border);
+  border-radius: 7px;
+  width: 350px;
+  margin-left: 15px;
 }
-.notesArea{
-    padding: 10px 10px;
-    margin: 15px;
-    background-color: rgb(39, 39, 39);
-    padding: 7px;
-    font-size: 16px;
-    color: #eee;
-    font-weight: bold;
+.notesArea {
+  padding: 10px 10px;
+  margin: 15px;
+  background-color: rgb(39, 39, 39);
+  padding: 7px;
+  font-size: 16px;
+  color: #eee;
+  font-weight: bold;
+}
 
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        padding: 10px 8px; /* قللنا المسافة الخارجية جداً عشان نوفر مساحة للشاشة */
+        gap: 15px; /* صغرنا الجاب بين العناصر للنص بدل 30px */
+        box-sizing: border-box;
+    }
+
+    .notes {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 12px 10px; /* تصغير المسافات الداخلية لبوكس النوتس */
+        border-radius: 5px; /* تنعيم الحواف عشان تليق مع الحجم الصغير */
+        box-sizing: border-box;
+    }
+
+    .notesArea {
+        width: 100%;
+        margin: 6px 0; /* مسافة صغيرة جداً فوق وتحت */
+        padding: 6px 8px; /* تصغير البادينج الداخلي للملاحظة نفسها */
+        font-size: 13px; /* صغرنا الخط لـ 13px عشان يكون اقتصادي ومياخدش سطور كتير */
+        box-sizing: border-box;
+    }
 }

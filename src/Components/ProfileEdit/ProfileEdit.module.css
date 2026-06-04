@@ -91,3 +91,35 @@
 .inputInfo .controls .email{
     width: 45%;
 }
+
+
+
+@media (max-width: 768px) {
+    .profileInfo {
+        width: 95%; /* زيادة العرض شوية عشان نستغل المساحة */
+        padding: 15px 10px;
+    }
+
+    /* تحويل عناصر الإدخال عشان تنزل تحت بعض */
+    .inputInfo .controls {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px; /* مسافة عمودية بين الاسم والإيميل */
+    }
+
+    /* إعطاء الحقول العرض الكامل */
+    .inputInfo .controls .name,
+    .inputInfo .controls .email {
+        width: 100%;
+    }
+
+    /* تعديل بسيط لقسم الصورة الشخصية عشان يظبط لو الشاشة ضيقة */
+    .profileInfo .avatar {
+        gap: 15px;
+    }
+    
+    .profileInfo .avatar .changeAvt {
+        font-size: 13px; /* تصغير حجم خط الزرار شوية */
+        padding: 6px 12px;
+    }
+}

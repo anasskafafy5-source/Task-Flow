@@ -1,12 +1,12 @@
 .mainNav{
     position: fixed;
     top: 0;
-    left: 220px;
-    width: calc(100% - 220px);
+    /* left: 220px; */
+    /* width: calc(100% - 220px); */
     height: 77px;
     border-bottom: var(--primary-border);
     padding: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 10000;
     background-color: black;
     box-shadow: 2px -1px 12px 1px #3bb3ff;
@@ -19,7 +19,7 @@
 }
 .content .ser{
     width: 350px;
-    display: flex;
+    /* display: flex; */
     gap: 10px;
     align-items: center;
 }

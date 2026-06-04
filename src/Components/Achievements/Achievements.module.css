@@ -23,3 +23,32 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+
+
+
+@media (max-width: 768px) {
+  .achievements {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .achievements .title h4 {
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  .achievementContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 12px;
+  }
+
+  .achievementContainer > * {
+    width: 100%;
+    max-width: 320px;
+    min-width: 0;
+    padding: 12px;
+  }
+}

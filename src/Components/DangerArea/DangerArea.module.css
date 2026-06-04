@@ -31,3 +31,17 @@
     color: #484848;
     margin-top: 3px;
 }
+
+@media (max-width: 768px) {
+    .dangerArea {
+        width: 95%; /* توسيع الحاوية شوية عشان الشاشات الصغيرة */
+        padding: 20px 15px;
+    }
+
+    /* تحويل محتويات الـ box عشان تنزل تحت بعض */
+    .box {
+        flex-direction: column;
+        align-items: flex-start; /* محاذاة العناصر للبداية */
+        gap: 15px; /* مسافة بين النص والزرار اللي هيكون موجود */
+    }
+}
