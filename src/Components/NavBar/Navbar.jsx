@@ -7,7 +7,6 @@ import InputSearch from "../InputSearch/InputSearch";
 import accountImage from "../../assets/accountImage.jpg";
 import { FaBars } from "react-icons/fa";
 
-
 function Navbar({ setAsideOpen, asideOpen }) {
   const [isSearch, setIsSearch] = useState(false);
 
@@ -16,7 +15,7 @@ function Navbar({ setAsideOpen, asideOpen }) {
       <nav className={`${styles.mainNav} left-0 flex w-full flex-col`}>
         <div className={styles.content}>
           {/* start for the small screen (ser) */}
-          <div className="temp flex w-full  items-center justify-between md:hidden!">
+          <div className="temp flex w-full items-center justify-between md:hidden!">
             <div onClick={() => setAsideOpen((aside) => !aside)}>
               {
                 <FaBars
@@ -24,7 +23,7 @@ function Navbar({ setAsideOpen, asideOpen }) {
                 />
               }
             </div>
-            <div onClick={() => setIsSearch(is => !is)}>
+            <div onClick={() => setIsSearch((is) => !is)}>
               {
                 <FaSearch
                   className={`mr-5! block text-[25px] ${isSearch ? "text-red-500" : "text-blue-300"}`}
@@ -34,7 +33,9 @@ function Navbar({ setAsideOpen, asideOpen }) {
           </div>
           {/* end for the small screen */}
 
-          <div className="hidden md:flex"><InputSearch /></div>
+          <div className="hidden md:flex">
+            <InputSearch />
+          </div>
 
           <div className={styles.sec}>
             <div className={`${styles.info} hidden`}>
@@ -47,16 +48,18 @@ function Navbar({ setAsideOpen, asideOpen }) {
                 <p className={styles.email}>anass@gmail.com</p>
               </div>
               <div className={`${styles.image}`}>
-                <img
-                  src={accountImage}
-                  alt="account image"
-                ></img>
+                <img src={accountImage} alt="account image"></img>
               </div>
             </div>
           </div>
         </div>
 
-       <div className={`flex md:hidden justify-center ${isSearch ? "flex" : "hidden"}`}> <InputSearch /></div>
+        <div
+          className={`flex justify-center md:hidden ${isSearch ? "flex" : "hidden"}`}
+        >
+          {" "}
+          <InputSearch />
+        </div>
       </nav>
     </>
   );

@@ -5,9 +5,7 @@ import { FaTasks } from "react-icons/fa";
 import { IoIosStats, IoIosSettings } from "react-icons/io";
 import logo from "../../assets/logo.png";
 
-
-function Aside({isOpen}) {
-
+function Aside({ isOpen, setAsideOpen }) {
   return (
     <div className={`${styles.aside} ${isOpen ? styles.open : styles.close}`}>
       <div className={styles.mainLogo}>
@@ -20,17 +18,33 @@ function Aside({isOpen}) {
         </div>
       </div>
       <div className={styles.navLinks}>
-        <NavLink to="/" className={styles.navLink}>
+        <NavLink
+          to="/"
+          className={styles.navLink}
+          onClick={() => setAsideOpen(false)}
+        >
           {<MdOutlineDashboard />} <span>DashBoard</span>
         </NavLink>
-        <NavLink to="tasks" className={styles.navLink}>
+        <NavLink
+          to="tasks"
+          className={styles.navLink}
+          onClick={() => setAsideOpen(false)}
+        >
           {<FaTasks />} <span>Tasks</span>
         </NavLink>
-        <NavLink to="stats" className={styles.navLink}>
+        <NavLink
+          to="stats"
+          className={styles.navLink}
+          onClick={() => setAsideOpen(false)}
+        >
           {<IoIosStats />}
           <span>Stats</span>
         </NavLink>
-        <NavLink to="settings" className={styles.navLink}>
+        <NavLink
+          to="settings"
+          className={styles.navLink}
+          onClick={() => setAsideOpen(false)}
+        >
           {<IoIosSettings />} <span>Settings</span>
         </NavLink>
       </div>
