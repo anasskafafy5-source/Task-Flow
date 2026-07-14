@@ -2,7 +2,7 @@
 
 Task Flow is a modern, responsive task management app built to make studying plans and daily tasks feel simple, clean, and fast ✨. The project is designed with a strong focus on **state management**, smooth navigation, and a polished UI that works beautifully across all screen sizes 📱💻.
 
-**Live Demo:** [task-flow-d0t.pages.dev/](task-flow-d0t.pages.dev/)
+**Live Demo:** [task-flow-d0t.pages.dev/](https://task-flow-d0t.pages.dev/)
 
 ## 🌟 What Makes It Stand Out
 
@@ -71,48 +71,3 @@ Make sure you have the following installed:
 git clone <your-repository-link>
 cd task-flow
 npm install
-```
-
-### Run Locally
-
-```bash
-npm run dev
-```
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-## 🗂️ Project Structure
-
-```bash
-src/
-├── assets/
-├── components/
-├── context/
-├── pages/
-├── routes/
-├── styles/
-└── App.jsx
-```
-
-## 🎯 Development Focus
-
-This project was built with a few clear goals:
-
-* keep the UI modern and easy to use
-* keep the codebase clean and organized
-* make the app responsive on every device
-* use reusable components
-* keep performance smooth and lightweight
-* build a strong base for future expansion
-
-## 📌 License
-
-This project is for personal and educational use.
-
----
-
-Built with React, Vite, and a scalable state management approach 💙.
