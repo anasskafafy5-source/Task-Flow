@@ -10,7 +10,7 @@ function Settings() {
                 <h3>Settings</h3>
                 <p>Manage your account and preferences</p>
             </div>
-            <ProfileEdit />
+            {/* <ProfileEdit /> */}
             <DangerArea />
         </div>
     )

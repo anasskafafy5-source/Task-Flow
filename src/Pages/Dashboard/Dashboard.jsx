@@ -13,7 +13,7 @@ function Dashboard() {
   return (
     <div className={`${styles.container}`}>
       <div className={styles.title}>
-        <h3>Welcome Back, Anass!</h3>
+        <h3>Welcome Back !</h3>
         <p className={styles.par}>
           Here's what's happening with your tasks today.
         </p>
