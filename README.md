@@ -2,7 +2,7 @@
 
 Task Flow is a modern, responsive task management app built to make studying plans and daily tasks feel simple, clean, and fast ✨. The project is designed with a strong focus on **state management**, smooth navigation, and a polished UI that works beautifully across all screen sizes 📱💻.
 
-**Live Demo:** [https://deluxe-naiad-1e426e.netlify.app/](task-flow-d0t.pages.dev/)
+**Live Demo:** [task-flow-d0t.pages.dev/](task-flow-d0t.pages.dev/)
 
 ## 🌟 What Makes It Stand Out
 
